@@ -44,7 +44,7 @@ app.listen(PORT, () => {
 	
 });
 
-console.log('sao quantos alunos?',(2));
+console.log('são quantos alunos?');
 
  const aluno1 ={
 	 nome1:'critopher',
@@ -63,8 +63,10 @@ let maiorNota = max(65,75);
 console.log(maiorNota);
 
 function max(nota1,nota2) {
-return nota1>nota2 ? nota1: nota2;
+   return nota1 > nota2 ? nota1: nota2 ;
 };
-
+let nome = ( 'qual é seu nome:');
+console.log(nome);
+let nota = ('qual é sua nota:');
+console.log(nota);
  
-
