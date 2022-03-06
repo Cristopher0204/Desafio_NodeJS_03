@@ -44,29 +44,49 @@ app.listen(PORT, () => {
 	
 });
 
-console.log('são quantos alunos?');
+const readline = require('readline');
 
- const aluno1 ={
-	 nome1:'critopher',
-	 nota1:65,
- };
- console.log(aluno1);
+ let nome1 = "cristopher";
+ let nota1 = 70;
 
-const aluno2 ={
-	nomer2:'rafael',
-	nota2:75,
-};
-console.log(aluno2);
+ let nome2 = "fernando";
+ let nota2 = 80;
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+ rl.question('quantos alunos são? ',() => {
+
+ rl.question('nome aluno1? ', () =>   {
+
+ rl.question('qual foi a sua nota? ',() => {
+ console.log("parabens");
+
+ rl.question('nome aluno2? ', () => {
+
+rl.question('qual foi a sua nota? ', () => {
+	console.log("parabens")
  
-let maiorNota = max(65,75);
+	let nota = (nota1=nota2);
 
-console.log(maiorNota);
+ console.log("nota"+nota);
 
-function max(nota1,nota2) {
-   return nota1 > nota2 ? nota1: nota2 ;
-};
-let nome = ( 'qual é seu nome:');
-console.log(nome);
-let nota = ('qual é sua nota:');
-console.log(nota);
+if(nota  ){
+	console.log(nome2+" nota mais alta");
+
+}
+
+	rl.close();
+
+});
+
+ });
+
+ });	
+
+});
+
+ });
  
